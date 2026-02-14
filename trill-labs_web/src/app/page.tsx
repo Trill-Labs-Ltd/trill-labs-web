@@ -1,14 +1,13 @@
-import { Link } from 'react-router-dom';
-import SEO from '../components/SEO';
+import Link from 'next/link';
 
-const Home = () => {
+export const metadata = {
+  title: 'Home',
+  description: 'Trill Labs Ltd is a UK-based software studio building AI-powered applications and scalable software products.',
+};
+
+export default function Home() {
   return (
     <div className="bg-slate-50">
-      <SEO 
-        title="Home" 
-        description="Trill Labs Ltd is a UK-based software studio building AI-powered applications and scalable software products." 
-      />
-      
       {/* Hero Section */}
       <div className="relative overflow-hidden bg-gradient-to-br from-slate-900 via-blue-950 to-indigo-950">
         <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNmZmZmZmYiIGZpbGwtb3BhY2l0eT0iMC4wMyI+PHBhdGggZD0iTTM2IDM0djItSDI0di0yaDEyek0zNiAyNHYySDI0di0yaDEyeiIvPjwvZz48L2c+PC9zdmc+')] opacity-50"></div>
@@ -28,7 +27,7 @@ const Home = () => {
                 <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
                   <div className="rounded-md shadow-lg">
                     <Link
-                      to="/products#limba"
+                      href="/products#limba"
                       className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-500 md:py-4 md:text-lg md:px-10 transition-colors"
                     >
                       Explore Limba
@@ -75,7 +74,6 @@ const Home = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="bg-gradient-to-br from-slate-900 via-blue-950 to-indigo-950 rounded-3xl overflow-hidden shadow-2xl">
             <div className="lg:grid lg:grid-cols-2">
-              {/* Text Content */}
               <div className="p-8 sm:p-12 lg:p-16 flex flex-col justify-center">
                 <div className="inline-flex items-center gap-2 bg-blue-500/20 text-blue-300 text-xs font-semibold px-3 py-1.5 rounded-full w-fit mb-6 ring-1 ring-blue-400/20">
                   <span className="h-1.5 w-1.5 rounded-full bg-blue-400 animate-pulse"></span>
@@ -118,34 +116,32 @@ const Home = () => {
                     <svg className="ml-2 h-4 w-4" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" /></svg>
                   </a>
                   <Link
-                    to="/products#limba"
+                    href="/products#limba"
                     className="inline-flex items-center justify-center px-6 py-3 text-base font-medium rounded-lg text-blue-300 border border-blue-400/30 hover:bg-blue-500/10 transition-colors"
                   >
                     Learn More
                   </Link>
                 </div>
               </div>
-              {/* Logo Visual */}
               <div className="relative hidden lg:block">
                 <div className="absolute inset-0 bg-gradient-to-br from-blue-600/20 via-indigo-600/10 to-violet-600/20"></div>
                 <div className="absolute top-1/4 right-1/4 w-64 h-64 bg-blue-500/10 rounded-full blur-3xl"></div>
                 <div className="absolute bottom-1/4 left-1/4 w-48 h-48 bg-indigo-500/10 rounded-full blur-3xl"></div>
                 <div className="relative h-full min-h-[400px] flex items-center justify-center p-12">
                   <div className="bg-white rounded-2xl p-10 shadow-2xl">
-                    <img 
-                      src="/images/logo/LIMBA@3x.png" 
-                      alt="Limba logo" 
+                    <img
+                      src="/images/logo/LIMBA@3x.png"
+                      alt="Limba logo"
                       className="max-h-20 w-auto drop-shadow-2xl"
                     />
                   </div>
                 </div>
               </div>
-              {/* Mobile logo */}
               <div className="lg:hidden px-8 pb-8">
                 <div className="bg-white rounded-2xl p-8 flex items-center justify-center shadow-2xl">
-                  <img 
-                    src="/images/logo/LIMBA@2x.png" 
-                    alt="Limba logo" 
+                  <img
+                    src="/images/logo/LIMBA@2x.png"
+                    alt="Limba logo"
                     className="max-h-12 w-auto"
                   />
                 </div>
@@ -166,88 +162,30 @@ const Home = () => {
             </p>
           </div>
           <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
-            <div className="pt-6">
-              <div className="flow-root bg-white rounded-xl px-6 pb-8 shadow-sm ring-1 ring-gray-100 hover:shadow-md transition-shadow">
-                <div className="-mt-6">
-                  <div className="inline-flex items-center justify-center p-2 bg-gradient-to-br from-blue-500 to-blue-600 rounded-lg shadow-md">
-                    <span className="text-white text-sm font-bold px-1">WT</span>
+            {[
+              { badge: 'WT', title: 'Wellness Tech', desc: 'AI-powered health and wellness applications. Starting with Limba, our personalised flexibility and stretch platform.', color: 'from-blue-500 to-blue-600' },
+              { badge: 'TP', title: 'AI Trading Platform', desc: 'Algorithmic trading powered by AI. From market analysis to automated execution on cloud-native infrastructure.', color: 'from-emerald-500 to-green-600' },
+              { badge: 'MA', title: 'Marketing Automation', desc: 'End-to-end automation software for campaigns, lead scoring, and customer retention. Helping businesses grow smarter.', color: 'from-orange-500 to-amber-600' },
+              { badge: 'AI', title: 'Developer AI & Tooling', desc: 'AI-powered code assistants, CLIs, and SDKs that help engineers ship faster and build better software.', color: 'from-violet-500 to-purple-600' },
+              { badge: 'SS', title: 'SaaS Products', desc: 'Scalable, cloud-hosted subscription services for niche verticals — built on AWS with multi-tenancy and enterprise security.', color: 'from-rose-500 to-pink-600' },
+              { badge: 'CL', title: 'Cloud-Native Architecture', desc: 'Every product is built on AWS — Lambda, ECS, DynamoDB, SageMaker — with Infrastructure as Code and automated CI/CD pipelines.', color: 'from-cyan-500 to-blue-600' },
+            ].map((item) => (
+              <div key={item.badge} className="pt-6">
+                <div className="flow-root bg-white rounded-xl px-6 pb-8 shadow-sm ring-1 ring-gray-100 hover:shadow-md transition-shadow">
+                  <div className="-mt-6">
+                    <div className={`inline-flex items-center justify-center p-2 bg-gradient-to-br ${item.color} rounded-lg shadow-md`}>
+                      <span className="text-white text-sm font-bold px-1">{item.badge}</span>
+                    </div>
+                    <h3 className="mt-4 text-lg font-medium text-gray-900 tracking-tight">{item.title}</h3>
+                    <p className="mt-3 text-base text-gray-500">{item.desc}</p>
                   </div>
-                  <h3 className="mt-4 text-lg font-medium text-gray-900 tracking-tight">Wellness Tech</h3>
-                  <p className="mt-3 text-base text-gray-500">
-                    AI-powered health and wellness applications. Starting with Limba, our personalised flexibility and stretch platform.
-                  </p>
                 </div>
               </div>
-            </div>
-            <div className="pt-6">
-              <div className="flow-root bg-white rounded-xl px-6 pb-8 shadow-sm ring-1 ring-gray-100 hover:shadow-md transition-shadow">
-                <div className="-mt-6">
-                  <div className="inline-flex items-center justify-center p-2 bg-gradient-to-br from-emerald-500 to-green-600 rounded-lg shadow-md">
-                    <span className="text-white text-sm font-bold px-1">TP</span>
-                  </div>
-                  <h3 className="mt-4 text-lg font-medium text-gray-900 tracking-tight">AI Trading Platform</h3>
-                  <p className="mt-3 text-base text-gray-500">
-                    Algorithmic trading powered by AI. From market analysis to automated execution on cloud-native infrastructure.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="pt-6">
-              <div className="flow-root bg-white rounded-xl px-6 pb-8 shadow-sm ring-1 ring-gray-100 hover:shadow-md transition-shadow">
-                <div className="-mt-6">
-                  <div className="inline-flex items-center justify-center p-2 bg-gradient-to-br from-orange-500 to-amber-600 rounded-lg shadow-md">
-                    <span className="text-white text-sm font-bold px-1">MA</span>
-                  </div>
-                  <h3 className="mt-4 text-lg font-medium text-gray-900 tracking-tight">Marketing Automation</h3>
-                  <p className="mt-3 text-base text-gray-500">
-                    End-to-end automation software for campaigns, lead scoring, and customer retention. Helping businesses grow smarter.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="pt-6">
-              <div className="flow-root bg-white rounded-xl px-6 pb-8 shadow-sm ring-1 ring-gray-100 hover:shadow-md transition-shadow">
-                <div className="-mt-6">
-                  <div className="inline-flex items-center justify-center p-2 bg-gradient-to-br from-violet-500 to-purple-600 rounded-lg shadow-md">
-                    <span className="text-white text-sm font-bold px-1">AI</span>
-                  </div>
-                  <h3 className="mt-4 text-lg font-medium text-gray-900 tracking-tight">Developer AI & Tooling</h3>
-                  <p className="mt-3 text-base text-gray-500">
-                    AI-powered code assistants, CLIs, and SDKs that help engineers ship faster and build better software.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="pt-6">
-              <div className="flow-root bg-white rounded-xl px-6 pb-8 shadow-sm ring-1 ring-gray-100 hover:shadow-md transition-shadow">
-                <div className="-mt-6">
-                  <div className="inline-flex items-center justify-center p-2 bg-gradient-to-br from-rose-500 to-pink-600 rounded-lg shadow-md">
-                    <span className="text-white text-sm font-bold px-1">SS</span>
-                  </div>
-                  <h3 className="mt-4 text-lg font-medium text-gray-900 tracking-tight">SaaS Products</h3>
-                  <p className="mt-3 text-base text-gray-500">
-                    Scalable, cloud-hosted subscription services for niche verticals — built on AWS with multi-tenancy and enterprise security.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="pt-6">
-              <div className="flow-root bg-white rounded-xl px-6 pb-8 shadow-sm ring-1 ring-gray-100 hover:shadow-md transition-shadow">
-                <div className="-mt-6">
-                  <div className="inline-flex items-center justify-center p-2 bg-gradient-to-br from-cyan-500 to-blue-600 rounded-lg shadow-md">
-                    <span className="text-white text-sm font-bold px-1">CL</span>
-                  </div>
-                  <h3 className="mt-4 text-lg font-medium text-gray-900 tracking-tight">Cloud-Native Architecture</h3>
-                  <p className="mt-3 text-base text-gray-500">
-                    Every product is built on AWS — Lambda, ECS, DynamoDB, SageMaker — with Infrastructure as Code and automated CI/CD pipelines.
-                  </p>
-                </div>
-              </div>
-            </div>
+            ))}
           </div>
           <div className="mt-10 text-center">
             <Link
-              to="/products"
+              href="/products"
               className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 shadow-md transition-all"
             >
               View All Products & Roadmap
@@ -275,6 +213,4 @@ const Home = () => {
       </div>
     </div>
   );
-};
-
-export default Home;
+}

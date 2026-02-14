@@ -1,12 +1,6 @@
-import SEO from '../components/SEO';
-
 const Terms = () => {
   return (
     <div className="bg-white py-16 px-4 sm:px-6 lg:px-8">
-      <SEO 
-        title="Terms & Conditions" 
-        description="Terms and Conditions for Trill Labs Ltd." 
-      />
       <div className="max-w-3xl mx-auto">
         <h1 className="text-3xl font-extrabold text-gray-900 sm:text-4xl">Terms & Conditions</h1>
         <div className="mt-6 prose prose-blue prose-lg text-gray-500">

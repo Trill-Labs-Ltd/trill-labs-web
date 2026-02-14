@@ -1,5 +1,6 @@
-import { Link } from 'react-router-dom';
-import SEO from '../components/SEO';
+'use client';
+
+import Link from 'next/link';
 import { useState } from 'react';
 
 const Products = () => {
@@ -30,11 +31,6 @@ const Products = () => {
 
   return (
     <div className="bg-slate-50">
-      <SEO 
-        title="Products" 
-        description="Discover Limba and other AI-powered software products from Trill Labs Ltd." 
-      />
-      
       {/* Products Header */}
       <div className="bg-gradient-to-br from-indigo-600 via-blue-600 to-blue-700 py-16 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent"></div>
@@ -72,7 +68,7 @@ const Products = () => {
                 </div>
                 <div className="rounded-md shadow">
                    <Link
-                    to="/contact"
+                    href="/contact"
                     className="flex items-center justify-center px-5 py-3 border border-gray-300 text-base font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50"
                   >
                     Contact Trill Labs
@@ -211,7 +207,7 @@ const Products = () => {
             </div>
             <div className="mt-8 lg:mt-0 lg:ml-8 flex-shrink-0">
               <Link
-                to="/about"
+                href="/about"
                 className="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-gray-900 bg-white hover:bg-gray-100"
               >
                 Learn More About Our Tech

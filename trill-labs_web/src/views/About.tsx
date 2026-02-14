@@ -1,13 +1,6 @@
-import SEO from '../components/SEO';
-
 const About = () => {
   return (
     <div className="bg-slate-50">
-      <SEO 
-        title="About Us" 
-        description="Learn about Trill Labs Ltd, a UK-based software studio, and our values." 
-      />
-
       {/* About Header */}
       <div className="bg-gradient-to-br from-slate-900 via-blue-950 to-indigo-950 py-16 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
         <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNmZmZmZmYiIGZpbGwtb3BhY2l0eT0iMC4wMyI+PHBhdGggZD0iTTM2IDM0djItSDI0di0yaDEyek0zNiAyNHYySDI0di0yaDEyeiIvPjwvZz48L2c+PC9zdmc+')] opacity-50"></div>

@@ -1,5 +1,6 @@
+'use client';
+
 import { useState } from 'react';
-import SEO from '../components/SEO';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -29,11 +30,6 @@ const Contact = () => {
 
   return (
     <div className="bg-slate-50 min-h-screen">
-      <SEO 
-        title="Contact Us" 
-        description="Get in touch with Trill Labs Ltd." 
-      />
-
       {/* Contact Header */}
       <div className="bg-gradient-to-r from-violet-600 via-indigo-600 to-blue-600 py-16 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/10"></div>

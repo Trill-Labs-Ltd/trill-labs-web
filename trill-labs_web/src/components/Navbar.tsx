@@ -1,25 +1,28 @@
-import { Link, useLocation } from 'react-router-dom';
+'use client';
+
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import { useState } from 'react';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const location = useLocation();
+  const pathname = usePathname();
 
-  const isActive = (path: string) => location.pathname === path ? 'text-blue-600 font-medium' : 'text-gray-600 hover:text-blue-600';
+  const isActive = (path: string) => pathname === path ? 'text-blue-600 font-medium' : 'text-gray-600 hover:text-blue-600';
 
   return (
     <nav className="bg-white/80 backdrop-blur-lg border-b border-gray-200/50 sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
           <div className="flex">
-            <Link to="/" className="flex-shrink-0 flex items-center">
+            <Link href="/" className="flex-shrink-0 flex items-center">
               <span className="text-xl font-bold tracking-tight text-gray-900">Trill Labs</span>
             </Link>
             <div className="hidden sm:ml-6 sm:flex sm:space-x-8 items-center">
-              <Link to="/" className={isActive('/')}>Home</Link>
-              <Link to="/about" className={isActive('/about')}>About</Link>
-              <Link to="/products" className={isActive('/products')}>Products</Link>
-              <Link to="/contact" className={isActive('/contact')}>Contact</Link>
+              <Link href="/" className={isActive('/')}>Home</Link>
+              <Link href="/about" className={isActive('/about')}>About</Link>
+              <Link href="/products" className={isActive('/products')}>Products</Link>
+              <Link href="/contact" className={isActive('/contact')}>Contact</Link>
             </div>
           </div>
           <div className="-mr-2 flex items-center sm:hidden">
@@ -45,10 +48,10 @@ const Navbar = () => {
       {isOpen && (
         <div className="sm:hidden">
           <div className="pt-2 pb-3 space-y-1">
-            <Link to="/" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50" onClick={() => setIsOpen(false)}>Home</Link>
-            <Link to="/about" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50" onClick={() => setIsOpen(false)}>About</Link>
-            <Link to="/products" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50" onClick={() => setIsOpen(false)}>Products</Link>
-            <Link to="/contact" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50" onClick={() => setIsOpen(false)}>Contact</Link>
+            <Link href="/" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50" onClick={() => setIsOpen(false)}>Home</Link>
+            <Link href="/about" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50" onClick={() => setIsOpen(false)}>About</Link>
+            <Link href="/products" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50" onClick={() => setIsOpen(false)}>Products</Link>
+            <Link href="/contact" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50" onClick={() => setIsOpen(false)}>Contact</Link>
           </div>
         </div>
       )}

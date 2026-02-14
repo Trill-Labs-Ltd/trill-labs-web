@@ -1,14 +1,8 @@
-import { Link } from 'react-router-dom';
-import SEO from '../components/SEO';
+import Link from 'next/link';
 
 const Privacy = () => {
   return (
     <div className="bg-slate-50 min-h-screen">
-      <SEO 
-        title="Privacy Policy" 
-        description="Privacy Policy for Trill Labs Ltd. How we collect, use, and protect your information." 
-      />
-
       {/* Header */}
       <div className="bg-gradient-to-br from-slate-900 via-blue-950 to-indigo-950 py-16 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
         <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNmZmZmZmYiIGZpbGwtb3BhY2l0eT0iMC4wMyI+PHBhdGggZD0iTTM2IDM0djItSDI0di0yaDEyek0zNiAyNHYySDI0di0yaDEyeiIvPjwvZz48L2c+PC9zdmc+')] opacity-50"></div>
@@ -145,7 +139,7 @@ const Privacy = () => {
 
           <div className="mt-8 flex justify-center">
             <Link
-              to="/"
+              href="/"
               className="text-sm font-medium text-blue-600 hover:text-blue-700"
             >
               ← Back to home
