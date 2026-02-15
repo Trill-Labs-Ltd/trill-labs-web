@@ -91,12 +91,6 @@ const Home = () => {
                   Go to www.getlimba.com
                     <svg className="ml-2 h-4 w-4" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" /></svg>
                   </a>
-                  <Link
-                    href="/products#limba"
-                    className="inline-flex items-center justify-center px-6 py-3 text-base font-medium rounded-lg text-blue-300 border border-blue-400/30 hover:bg-blue-500/10 transition-colors"
-                  >
-                    Learn More
-                  </Link>
                 </div>
               </div>
               {/* Logo Visual */}
