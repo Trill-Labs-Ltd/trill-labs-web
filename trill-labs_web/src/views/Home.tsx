@@ -233,7 +233,7 @@ const Home = () => {
                   </div>
                   <h3 className="mt-4 text-lg font-medium text-gray-900 tracking-tight">Cloud-Native Architecture</h3>
                   <p className="mt-3 text-base text-gray-500">
-                    Every product is built on AWS — Lambda, ECS, DynamoDB, SageMaker — with Infrastructure as Code and automated CI/CD pipelines.
+                    Every product is built leveraging AWS and modern cloud technologies with Infrastructure as Code and automated CI/CD pipelines.
                   </p>
                 </div>
               </div>
