@@ -63,7 +63,7 @@ const Products = () => {
                     rel="noopener noreferrer"
                     className="flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 transition-all"
                   >
-                    Get Limba
+                  Go to www.getlimba.com 
                   </a>
                 </div>
                 <div className="rounded-md shadow">
