@@ -19,8 +19,8 @@ const About = () => {
       <div className="py-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
 
-        <div className="mt-20">
-          <div className="lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center">
+        <div className="mt-12">
+          <div className="lg:grid lg:grid-cols-2 lg:gap-12 lg:items-start">
             <div>
               <h3 className="text-2xl font-extrabold text-gray-900 tracking-tight sm:text-3xl">
                 Who We Are
@@ -107,7 +107,7 @@ const About = () => {
                 <h4 className="ml-3 text-lg font-bold text-gray-900">CI/CD & DevOps</h4>
               </div>
               <p className="text-gray-500">
-                Automated pipelines with GitHub Actions, AWS CodePipeline, and Infrastructure as Code via CloudFormation and Terraform for repeatable deployments.
+              We build automated CI/CD pipelines using GitHub Actions and AWS CodePipeline, with Infrastructure as Code to ensure every deployment is repeatable, versioned, and production-safe.
               </p>
             </div>
             <div className="bg-white rounded-lg p-6 shadow-sm">

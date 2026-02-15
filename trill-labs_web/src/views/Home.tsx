@@ -161,7 +161,7 @@ const Home = () => {
           </div>
           <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
             <div className="pt-6">
-              <div className="flow-root bg-white rounded-xl px-6 pb-8 shadow-sm ring-1 ring-gray-100 hover:shadow-md transition-shadow">
+              <div className="flow-root bg-white rounded-xl px-6 pb-8 shadow-sm ring-1 ring-gray-100 transition-all duration-200 hover:shadow-lg hover:-translate-y-1 hover:ring-gray-200">
                 <div className="-mt-6">
                   <div className="inline-flex items-center justify-center p-2 bg-gradient-to-br from-blue-500 to-blue-600 rounded-lg shadow-md">
                     <span className="text-white text-sm font-bold px-1">WT</span>
@@ -174,7 +174,7 @@ const Home = () => {
               </div>
             </div>
             <div className="pt-6">
-              <div className="flow-root bg-white rounded-xl px-6 pb-8 shadow-sm ring-1 ring-gray-100 hover:shadow-md transition-shadow">
+              <div className="flow-root bg-white rounded-xl px-6 pb-8 shadow-sm ring-1 ring-gray-100 transition-all duration-200 hover:shadow-lg hover:-translate-y-1 hover:ring-gray-200">
                 <div className="-mt-6">
                   <div className="inline-flex items-center justify-center p-2 bg-gradient-to-br from-emerald-500 to-green-600 rounded-lg shadow-md">
                     <span className="text-white text-sm font-bold px-1">TP</span>
@@ -187,7 +187,7 @@ const Home = () => {
               </div>
             </div>
             <div className="pt-6">
-              <div className="flow-root bg-white rounded-xl px-6 pb-8 shadow-sm ring-1 ring-gray-100 hover:shadow-md transition-shadow">
+              <div className="flow-root bg-white rounded-xl px-6 pb-8 shadow-sm ring-1 ring-gray-100 transition-all duration-200 hover:shadow-lg hover:-translate-y-1 hover:ring-gray-200">
                 <div className="-mt-6">
                   <div className="inline-flex items-center justify-center p-2 bg-gradient-to-br from-orange-500 to-amber-600 rounded-lg shadow-md">
                     <span className="text-white text-sm font-bold px-1">MA</span>
@@ -200,7 +200,7 @@ const Home = () => {
               </div>
             </div>
             <div className="pt-6">
-              <div className="flow-root bg-white rounded-xl px-6 pb-8 shadow-sm ring-1 ring-gray-100 hover:shadow-md transition-shadow">
+              <div className="flow-root bg-white rounded-xl px-6 pb-8 shadow-sm ring-1 ring-gray-100 transition-all duration-200 hover:shadow-lg hover:-translate-y-1 hover:ring-gray-200">
                 <div className="-mt-6">
                   <div className="inline-flex items-center justify-center p-2 bg-gradient-to-br from-violet-500 to-purple-600 rounded-lg shadow-md">
                     <span className="text-white text-sm font-bold px-1">AI</span>
@@ -213,7 +213,7 @@ const Home = () => {
               </div>
             </div>
             <div className="pt-6">
-              <div className="flow-root bg-white rounded-xl px-6 pb-8 shadow-sm ring-1 ring-gray-100 hover:shadow-md transition-shadow">
+              <div className="flow-root bg-white rounded-xl px-6 pb-8 shadow-sm ring-1 ring-gray-100 transition-all duration-200 hover:shadow-lg hover:-translate-y-1 hover:ring-gray-200">
                 <div className="-mt-6">
                   <div className="inline-flex items-center justify-center p-2 bg-gradient-to-br from-rose-500 to-pink-600 rounded-lg shadow-md">
                     <span className="text-white text-sm font-bold px-1">SS</span>
@@ -226,7 +226,7 @@ const Home = () => {
               </div>
             </div>
             <div className="pt-6">
-              <div className="flow-root bg-white rounded-xl px-6 pb-8 shadow-sm ring-1 ring-gray-100 hover:shadow-md transition-shadow">
+              <div className="flow-root bg-white rounded-xl px-6 pb-8 shadow-sm ring-1 ring-gray-100 transition-all duration-200 hover:shadow-lg hover:-translate-y-1 hover:ring-gray-200">
                 <div className="-mt-6">
                   <div className="inline-flex items-center justify-center p-2 bg-gradient-to-br from-cyan-500 to-blue-600 rounded-lg shadow-md">
                     <span className="text-white text-sm font-bold px-1">CL</span>

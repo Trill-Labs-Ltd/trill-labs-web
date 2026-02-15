@@ -40,7 +40,7 @@ export default function Home() {
                       rel="noopener noreferrer"
                       className="w-full flex items-center justify-center px-8 py-3 border border-blue-400/30 text-base font-medium rounded-md text-blue-300 bg-blue-500/10 hover:bg-blue-500/20 md:py-4 md:text-lg md:px-10 transition-colors"
                     >
-                      Get Limba
+                      Go to www.getlimba.com
                     </a>
                   </div>
                 </div>
@@ -112,7 +112,7 @@ export default function Home() {
                     rel="noopener noreferrer"
                     className="inline-flex items-center justify-center px-6 py-3 text-base font-medium rounded-lg text-white bg-blue-600 hover:bg-blue-500 transition-colors shadow-lg shadow-blue-500/25"
                   >
-                    Get Limba
+                    Go to www.getlimba.com
                     <svg className="ml-2 h-4 w-4" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" /></svg>
                   </a>
                   <Link
@@ -171,7 +171,7 @@ export default function Home() {
               { badge: 'CL', title: 'Cloud-Native Architecture', desc: 'Every product is built on AWS — Lambda, ECS, DynamoDB, SageMaker — with Infrastructure as Code and automated CI/CD pipelines.', color: 'from-cyan-500 to-blue-600' },
             ].map((item) => (
               <div key={item.badge} className="pt-6">
-                <div className="flow-root bg-white rounded-xl px-6 pb-8 shadow-sm ring-1 ring-gray-100 hover:shadow-md transition-shadow">
+                <div className="flow-root bg-white rounded-xl px-6 pb-8 shadow-sm ring-1 ring-gray-100 transition-all duration-200 hover:shadow-lg hover:-translate-y-1 hover:ring-gray-200">
                   <div className="-mt-6">
                     <div className={`inline-flex items-center justify-center p-2 bg-gradient-to-br ${item.color} rounded-lg shadow-md`}>
                       <span className="text-white text-sm font-bold px-1">{item.badge}</span>

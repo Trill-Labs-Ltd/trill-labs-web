@@ -132,12 +132,12 @@ const Products = () => {
               Future Roadmap
             </h3>
             <p className="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
-              Beyond Limba, we are building a portfolio of cloud-native products powered by AWS, AI, and modern engineering — each designed to solve real problems at scale.
+              Beyond Limba, we are building a portfolio of cloud-native products powered by AWS, AI, and modern engineering. Each designed to solve real problems at scale.
             </p>
           </div>
           <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
 
-             <div className="bg-white rounded-xl p-8 border border-gray-100 hover:shadow-lg transition-shadow ring-1 ring-gray-100">
+             <div className="bg-white rounded-xl p-8 border border-gray-100 ring-1 ring-gray-100 transition-all duration-200 hover:shadow-lg hover:-translate-y-1 hover:ring-gray-200">
                 <div className="h-10 w-10 rounded-lg bg-gradient-to-br from-orange-400 to-amber-500 flex items-center justify-center mb-4 shadow-sm">
                   <span className="text-white font-bold text-lg">MA</span>
                 </div>
@@ -148,7 +148,7 @@ const Products = () => {
                 <span className="inline-block mt-4 text-xs font-semibold text-orange-600 bg-orange-50 px-3 py-1 rounded-full">Planned</span>
              </div>
 
-             <div className="bg-white rounded-xl p-8 border border-gray-100 hover:shadow-lg transition-shadow ring-1 ring-gray-100">
+             <div className="bg-white rounded-xl p-8 border border-gray-100 ring-1 ring-gray-100 transition-all duration-200 hover:shadow-lg hover:-translate-y-1 hover:ring-gray-200">
                 <div className="h-10 w-10 rounded-lg bg-gradient-to-br from-emerald-500 to-green-600 flex items-center justify-center mb-4 shadow-sm">
                   <span className="text-white font-bold text-lg">TP</span>
                 </div>
@@ -159,29 +159,18 @@ const Products = () => {
                 <span className="inline-block mt-4 text-xs font-semibold text-green-600 bg-green-50 px-3 py-1 rounded-full">Planned</span>
              </div>
 
-             <div className="bg-white rounded-xl p-8 border border-gray-100 hover:shadow-lg transition-shadow ring-1 ring-gray-100">
+             <div className="bg-white rounded-xl p-8 border border-gray-100 ring-1 ring-gray-100 transition-all duration-200 hover:shadow-lg hover:-translate-y-1 hover:ring-gray-200">
                 <div className="h-10 w-10 rounded-lg bg-gradient-to-br from-violet-500 to-purple-600 flex items-center justify-center mb-4 shadow-sm">
                   <span className="text-white font-bold text-lg">DT</span>
                 </div>
                 <h4 className="text-lg font-bold text-gray-900">Developer Tooling</h4>
                 <p className="mt-2 text-gray-500">
-                  CLI tools, SDKs, and cloud-integrated utilities that help engineers ship faster. From deployment pipelines to code generation — we're building the tools we wish existed.
+                  CLI tools, SDKs, and cloud-integrated utilities that help engineers ship faster. From deployment pipelines to code generation. e're building the tools we wish existed for you to use.
                 </p>
                 <span className="inline-block mt-4 text-xs font-semibold text-violet-600 bg-violet-50 px-3 py-1 rounded-full">Planned</span>
              </div>
-
-             <div className="bg-white rounded-xl p-8 border border-gray-100 hover:shadow-lg transition-shadow ring-1 ring-gray-100">
-                <div className="h-10 w-10 rounded-lg bg-gradient-to-br from-blue-500 to-indigo-600 flex items-center justify-center mb-4 shadow-sm">
-                  <span className="text-white font-bold text-lg">AI</span>
-                </div>
-                <h4 className="text-lg font-bold text-gray-900">Developer AI</h4>
-                <p className="mt-2 text-gray-500">
-                  AI-powered developer assistants for code review, architecture suggestions, and intelligent debugging. Built on top of large language models and fine-tuned for real engineering workflows.
-                </p>
-                <span className="inline-block mt-4 text-xs font-semibold text-blue-600 bg-blue-50 px-3 py-1 rounded-full">Research</span>
-             </div>
-
-             <div className="bg-white rounded-xl p-8 border border-gray-100 hover:shadow-lg transition-shadow ring-1 ring-gray-100">
+             
+             <div className="bg-white rounded-xl p-8 border border-gray-100 ring-1 ring-gray-100 transition-all duration-200 hover:shadow-lg hover:-translate-y-1 hover:ring-gray-200">
                 <div className="h-10 w-10 rounded-lg bg-gradient-to-br from-rose-500 to-pink-600 flex items-center justify-center mb-4 shadow-sm">
                   <span className="text-white font-bold text-lg">SS</span>
                 </div>
