@@ -220,7 +220,7 @@ const Home = () => {
                   </div>
                   <h3 className="mt-4 text-lg font-medium text-gray-900 tracking-tight">SaaS Products</h3>
                   <p className="mt-3 text-base text-gray-500">
-                    Scalable, cloud-hosted subscription services for niche verticals — built on AWS with multi-tenancy and enterprise security.
+                    Scalable, cloud-hosted subscription services for niche verticals. Built on AWS with multi-tenancy and enterprise security.
                   </p>
                 </div>
               </div>
