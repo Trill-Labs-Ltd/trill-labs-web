@@ -182,19 +182,6 @@ const Home = () => {
             <div className="pt-6">
               <div className="flow-root bg-white rounded-xl px-6 pb-8 shadow-sm ring-1 ring-gray-100 transition-all duration-200 hover:shadow-lg hover:-translate-y-1 hover:ring-gray-200">
                 <div className="-mt-6">
-                  <div className="inline-flex items-center justify-center p-2 bg-gradient-to-br from-violet-500 to-purple-600 rounded-lg shadow-md">
-                    <span className="text-white text-sm font-bold px-1">AI</span>
-                  </div>
-                  <h3 className="mt-4 text-lg font-medium text-gray-900 tracking-tight">Developer AI & Tooling</h3>
-                  <p className="mt-3 text-base text-gray-500">
-                    AI-powered code assistants, CLIs, and SDKs that help engineers ship faster and build better software.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="pt-6">
-              <div className="flow-root bg-white rounded-xl px-6 pb-8 shadow-sm ring-1 ring-gray-100 transition-all duration-200 hover:shadow-lg hover:-translate-y-1 hover:ring-gray-200">
-                <div className="-mt-6">
                   <div className="inline-flex items-center justify-center p-2 bg-gradient-to-br from-rose-500 to-pink-600 rounded-lg shadow-md">
                     <span className="text-white text-sm font-bold px-1">SS</span>
                   </div>
