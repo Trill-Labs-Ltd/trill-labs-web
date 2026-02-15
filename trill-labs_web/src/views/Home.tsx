@@ -19,25 +19,6 @@ const Home = () => {
                 <p className="mt-3 text-base text-blue-100/70 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
                   Trill Labs Ltd is a UK-based software studio building AI-powered applications and scalable software products.
                 </p>
-                <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
-                  <div className="rounded-md shadow-lg">
-                    <Link
-                      href="/products#limba"
-                      className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-500 md:py-4 md:text-lg md:px-10 transition-colors"
-                    >
-                      Explore Limba
-                    </Link>
-                  </div>
-                  <div className="mt-3 sm:mt-0 sm:ml-3">
-                    <a
-                      href="https://www.getlimba.com"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="w-full flex items-center justify-center px-8 py-3 border border-blue-400/30 text-base font-medium rounded-md text-blue-300 bg-blue-500/10 hover:bg-blue-500/20 md:py-4 md:text-lg md:px-10 transition-colors"
-                    >
-                    Go to www.getlimba.com                    </a>
-                  </div>
-                </div>
               </div>
             </main>
           </div>
