@@ -35,8 +35,7 @@ const Home = () => {
                       rel="noopener noreferrer"
                       className="w-full flex items-center justify-center px-8 py-3 border border-blue-400/30 text-base font-medium rounded-md text-blue-300 bg-blue-500/10 hover:bg-blue-500/20 md:py-4 md:text-lg md:px-10 transition-colors"
                     >
-                      Go to www.getlimba.com
-                    </a>
+                    Go to www.getlimba.com                    </a>
                   </div>
                 </div>
               </div>
